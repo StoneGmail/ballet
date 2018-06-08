@@ -1,0 +1,41 @@
+{
+  "data-interface": [
+    {
+      "name": "ctp",
+      "param": {
+        "ctpmd-logpath": "/app/sean/bin/gom/log",
+        "brokerid": "0118",
+        "clientid": "10007696",
+        "password": "248410",
+        "udp": false,
+        "mduri": [
+          "tcp://210.22.104.65:41213",
+          "tcp://210.22.104.66:41213"
+        ],
+        "tduri": [
+          "tcp://210.22.104.65:41205",
+          "tcp://210.22.104.66:41205"
+        ],
+        "shared_mem_name": "CtpSharedMemory"
+      }
+    }
+  ],
+  "instrument": {
+    "file": "/app/sean/bin/gom/conf/trade-inst.json"
+  },
+  "gmd-param": {
+    "max-tick-per-sec": 2,
+    "tick-buffer-num": 2,
+    "save-tickbuf-time": 5,
+    "max-time-long": 12,
+    "log-path": "/app/sean/bin/gom/log/gmd.log",
+    "tdlog-path": "/app/sean/bin/gom/log/gtd.log",
+    "data-store-path": "/app/sean/data/store",
+    "tick-data-path": "/app/sean/data/tick",
+    "tick-bin-path": "/app/sean/data/tick_bindata",
+    "data-realtime-path": "/app/sean/data/rt",
+    "cal-store-path": "/app/sean/data/cal",
+    "save-loop-interval": 10,
+    "exit-time": "16:00:00"
+  }
+}

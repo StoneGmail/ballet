@@ -1,0 +1,60 @@
+#ifndef MDERR_H
+#define MDERR_H
+
+#include "utility_global.h"
+
+#define SUCCESSED                   0
+
+#define MIN_ERROR_NO                        0x10000000
+#define MDERR_CTP_CONFIG_FILE_ISNULL        0x10000000
+#define MDERR_CTP_CONFIG_FILE_EMPTY         0x10000001
+#define MDERR_CTP_CONFIG_PARSE_ERROR        0x10000002
+#define MDERR_JSON_DATAINF_PARAM_NO_NAME    0x10000003
+#define MDERR_CTP_CONFIG_DIF_ERROR          0x10000004
+#define MDERR_CTP_CONFIG_INSTRUMENT_ERROR   0x10000005
+#define MDERR_CTP_CONFIG_FORMAT_ERROR       0x10000006
+#define MDERR_CTP_CONFIG_NO_LOGPATH         0x10000007
+#define MDERR_CTP_CONFIG_NO_BROKERID        0x10000008
+#define MDERR_CTP_CONFIG_NO_CLIENTID        0x10000009
+#define MDERR_CTP_CONFIG_NO_PASSWORD        0x1000000a
+#define MDERR_CTP_CONFIG_NO_SERVERS         0x1000000b
+#define MDERR_CTP_CONFIG_NO_PARAM           0x1000000c
+#define MDERR_CTP_CONFIG_SERVER_NO_ADDR     0x1000000d
+#define MDERR_CTP_CONFIG_NO_INSTRUMENT      0x1000000e
+#define MDERR_CTP_CONFIG_SERVER_NO_UDP      0x1000000f
+#define MDERR_GMD_CONFIG_ERROR              0x10000010
+#define MDERR_CTP_CONFIG_NO_SHARED_MEM_NAME 0x10000011
+
+#define MDERR_MEMMAPPING_SHMOPEN            0x10000012
+#define MDERR_MEMMAPPING_FAILED             0x10000013
+#define MDERR_MAMMAPPING_MUNMAP             0x10000014
+#define MDERR_MAMMAPPING_SHMUNLINK          0x10000015
+#define MDERR_MEMMAPPING_FTRUNCATE          0x10000016
+
+
+#define MDERR_CANNOT_OPEN_INSTICKFILE       0x10000017
+#define MDERR_WRITE_TICK_CTPMARKETDATA      0x10000018
+#define MDERR_CANNOT_OPEN_MMDFILE           0x10000019
+#define MDERR_WRITE_CTPMMD_DATA             0x1000001a
+
+#define MDERR_MEMORY_IS_READONLY            0x1000001b
+#define MDERR_MEMORY_IS_FULL                0x1000001c
+#define MDERR_MEMORY_WRITE_ERROR            0x1000001d
+
+#define MAX_ERROR_NO                        0x1000001d
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
+// extern UTILITY_API const char *getErrorString(int err);
+
+
+#ifdef __cplusplus
+}
+#endif
+
+
+#endif // MDERR_H
